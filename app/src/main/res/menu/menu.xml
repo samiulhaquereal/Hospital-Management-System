@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/aboutid"
+        android:title="About Us"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/settingsid"
+        android:title="Settings"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/logoutid"
+        android:title="Logout"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/shareid"
+        android:title="Share"
+        app:showAsAction="always"
+        android:icon="@drawable/share"
+        />
+
+
+</menu>

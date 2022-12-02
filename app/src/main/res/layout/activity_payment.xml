@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30sp"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context=".payment">
+
+    <LinearLayout
+        android:layout_marginTop="220sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Type:"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            />
+
+        <Spinner
+            android:background="@drawable/spinnedesign"
+            android:dropDownSelector="@color/main"
+            android:layout_width="149dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.498"
+            android:id="@+id/spinner"
+            android:layout_marginLeft="20sp"
+            />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edittext1"
+        android:height="60sp"
+        android:textColorHint="@color/white"
+        android:hint="Patient ID"
+        android:inputType="number"
+        android:layout_marginTop="30sp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edittext2"
+        android:height="60sp"
+        android:textColorHint="@color/white"
+        android:hint="Transaction ID"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="70sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Submit"
+                android:textSize="15sp"
+                android:backgroundTint="@color/main"
+                android:onClick="submit"
+                />
+            <Button
+                android:id="@+id/signupbtn"
+                android:layout_marginLeft="50sp"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textSize="15sp"
+                android:backgroundTint="@color/main"
+                android:onClick="cancel"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

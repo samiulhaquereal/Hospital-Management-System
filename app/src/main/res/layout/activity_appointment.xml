@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg2"
+    tools:context=".appointment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:src="@drawable/logo2"
+                />
+
+            <EditText
+                android:layout_marginTop="40sp"
+                android:id="@+id/edit1"
+                android:layout_width="380sp"
+                android:layout_height="70sp"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:drawablePadding="12dp"
+                android:background="@drawable/boarder_edittext"
+                android:paddingStart="12sp"
+                android:paddingEnd="12sp"
+                android:hint="Name"
+                android:textColorHint="@color/white"
+                android:textSize="14sp" />
+
+
+            <EditText
+                android:layout_marginTop="40sp"
+                android:id="@+id/edit3"
+                android:layout_width="380sp"
+                android:layout_height="70sp"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:inputType="number"
+                android:drawablePadding="12dp"
+                android:background="@drawable/boarder_edittext"
+                android:paddingStart="12sp"
+                android:paddingEnd="12sp"
+                android:hint="Phone Number"
+                android:textColorHint="@color/white"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_marginTop="40sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Gender : "
+                android:gravity="start"
+                android:layout_marginLeft="14sp"
+                android:textColor="@color/white"
+
+                />
+
+
+            <RadioGroup
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/q1radiogrpId"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+
+                >
+
+                <RadioButton
+                    android:id="@+id/maleid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15sp"
+                    android:text="Male"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/femaleid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Female"
+                    android:layout_marginRight="11sp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+                <RadioButton
+                    android:id="@+id/otherid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Other"
+                    android:layout_marginRight="11sp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                >
+
+                <TextView
+                    android:layout_marginLeft="14sp"
+                    android:layout_marginTop="40sp"
+                    android:id="@+id/dateid"
+                    android:layout_width="240sp"
+                    android:text="Date"
+                    android:layout_height="70sp"
+                    android:ems="10"
+                    android:textColor="@color/white"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/boarder_edittext"
+                    android:paddingTop="18sp"
+                    android:paddingStart="12sp"
+                    android:paddingEnd="12sp"
+                    android:textSize="14sp" />
+                <Button
+                    android:layout_marginRight="14sp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/boarder_edittext"
+                    android:paddingStart="12sp"
+                    android:paddingEnd="12sp"
+                    android:id="@+id/pickid"
+                    android:layout_width="90sp"
+                    android:layout_height="70sp"
+                    android:layout_marginTop="40sp"
+                    android:gravity="center"
+                    android:text="Pick a Date"
+                    android:textSize="11sp"
+                    android:layout_marginLeft="30sp"
+                    />
+
+            </LinearLayout>
+            <EditText
+                android:layout_marginTop="40sp"
+                android:id="@+id/edit6"
+                android:layout_width="380sp"
+                android:layout_height="70sp"
+                android:ems="10"
+                android:textColor="@color/white"
+                android:inputType="text"
+                android:drawablePadding="12dp"
+                android:background="@drawable/boarder_edittext"
+                android:paddingStart="12sp"
+                android:paddingEnd="12sp"
+                android:hint="Doctor Name"
+                android:textColorHint="@color/white"
+                android:textSize="14sp" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50sp"
+                    android:gravity="center"
+                    android:text="Save"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50sp"
+                    android:gravity="center"
+                    android:text="Back"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="50sp"
+                    android:layout_marginBottom="50sp"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

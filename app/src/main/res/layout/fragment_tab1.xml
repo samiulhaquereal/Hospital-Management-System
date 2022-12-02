@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="3"
+    android:background="@drawable/bg2"
+    android:orientation="vertical"
+    tools:context=".tab1">
+
+    <LinearLayout
+        android:gravity="center"
+        android:clipToPadding="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview1id"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_margin="10sp"
+            android:layout_weight="1"
+            app:cardCornerRadius="20sp"
+            android:backgroundTint="@color/main"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="30sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:text="Username"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:text="Patient"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:text="Bed"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15sp"
+                    android:text="Doctor"
+                    android:textAppearance="@android:style/TextAppearance.Large"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:gravity="center"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                >
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="10sp"
+                    android:id="@+id/cardview2id"
+                    app:cardCornerRadius="20sp"
+                    android:backgroundTint="@color/main"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:background="#00FFFFFF"
+                            android:id="@+id/btn1"
+                            android:layout_width="match_parent"
+                            android:layout_height="72sp"
+                            android:text="Add Patient"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAppearance="@android:style/TextAppearance.Large"/>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="10sp"
+                    app:cardCornerRadius="20sp"
+                    android:backgroundTint="@color/main"
+                    android:id="@+id/cardview3id"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:background="#00FFFFFF"
+                            android:id="@+id/btn2"
+                            android:layout_width="match_parent"
+                            android:layout_height="72sp"
+                            android:text="Remove Patient"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAppearance="@android:style/TextAppearance.Large"/>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                >
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:cardCornerRadius="20sp"
+                    android:backgroundTint="@color/main"
+                    android:layout_margin="10sp"
+                    android:id="@+id/cardview4id"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:background="#00FFFFFF"
+                            android:id="@+id/btn3"
+                            android:layout_width="match_parent"
+                            android:layout_height="72sp"
+                            android:text="Doctor Appointment"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAppearance="@android:style/TextAppearance.Large"/>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:cardCornerRadius="20sp"
+                    android:backgroundTint="@color/main"
+                    android:layout_margin="10sp"
+                    android:id="@+id/cardview5id"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:id="@+id/btn4"
+                            android:background="#00FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="72sp"
+                            android:text="Show Appointment"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAppearance="@android:style/TextAppearance.Large"/>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                >
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    app:cardCornerRadius="20sp"
+                    android:backgroundTint="@color/main"
+                    android:layout_margin="10sp"
+                    android:id="@+id/cardview6id"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/btn5"
+                            android:layout_width="match_parent"
+                            android:background="#00FFFFFF"
+                            android:layout_height="72sp"
+                            android:text="Search Details"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAppearance="@android:style/TextAppearance.Large"/>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_margin="10sp"
+                    android:id="@+id/cardview7id"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="20sp"
+                    android:backgroundTint="@color/main"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:id="@+id/btn6"
+                            android:background="#00FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="72sp"
+                            android:text="Bill Pay"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textAppearance="@android:style/TextAppearance.Large"/>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

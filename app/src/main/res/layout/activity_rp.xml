@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    android:gravity="center_horizontal"
+    tools:context=".rp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:src="@drawable/logo2"
+        />
+    <EditText
+        android:layout_marginTop="40sp"
+        android:id="@+id/edit1id"
+        android:layout_width="380sp"
+        android:layout_height="70sp"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:inputType="number"
+        android:drawablePadding="12dp"
+        android:background="@drawable/boarder_edittext"
+        android:paddingStart="12sp"
+        android:paddingEnd="12sp"
+        android:hint="Patient ID"
+        android:textColorHint="@color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+        <Button
+            android:id="@+id/submit1"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:gravity="center"
+            android:text="Submit"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/cancel1"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:layout_marginLeft="50sp"
+            android:layout_marginBottom="50sp"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
