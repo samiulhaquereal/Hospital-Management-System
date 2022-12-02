@@ -41,6 +41,7 @@ public class dashboard extends AppCompatActivity {
         FragmentManager fragmentManager = getSupportFragmentManager();
         Customada adapter = new Customada(fragmentManager);
         viewPager.setAdapter(adapter);
+        //Done
 
 
 
